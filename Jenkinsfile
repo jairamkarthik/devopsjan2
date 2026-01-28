@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                echo "Pulling from GITHUB repository"
-               git branch: 'main', credentialsId: 'mygithubcred', url: 'https://github.com/chntraining/devopsjan.git'
+               git branch: 'main', credentialsId: 'github', url: 'https://github.com/jairamkarthik/devopsjan2.git'
             }
         }
          stage('Test the Project') {
